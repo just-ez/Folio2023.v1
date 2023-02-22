@@ -1,0 +1,217 @@
+
+#preloader {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    transition: 1s opacity;
+    z-index: 9999;
+     gap: 100px;
+}
+
+#preloader > div {
+   height: 3vh;
+   overflow: hidden;
+}
+#preloader > div > span {
+    color: #eee;
+    position: relative;
+    top: 50px;
+    animation-name: showText;
+    animation-duration: 1s;
+}
+#preloader > div > span:nth-child(1) {
+    animation-delay: 1s;
+}
+#preloader > div > span:nth-child(2) {
+    animation-delay: 1.5s;
+}
+#preloader > div > span:nth-child(3) {
+    animation-delay: 2s;
+}
+#preloader > div > span:nth-child(4) {
+    animation-delay: 2.5s;
+}
+#preloader > div > span:nth-child(5) {
+    animation-delay: 3s;
+}
+#preloader > div > span:nth-child(6) {
+    animation-delay: 3.5s;
+}
+#preloader > div > span:nth-child(7) {
+    animation-delay: 4s;
+}
+#preloader > div > span:nth-child(8) {
+    animation-delay: 4.5s;
+}
+#preloader > div > span:nth-child(9) {
+    animation-delay: 5s;
+}
+
+@keyframes showText {
+    0% {
+        top: 50px;
+    }
+    100% {
+        top: 0;
+    }
+}
+#wrapper {
+    aspect-ratio: 1.618;
+    width: 25vmin;
+    height: 25vh;
+    position: relative;
+    gap: 20px;
+}
+
+#wrapper > .shape {
+    background-color: #333;
+    position: absolute;
+    transition: top, left, right, width, border-radius, transform;
+    transition-duration: 750ms;
+    transition-timing-function: ease-in-out;
+    border-radius: 1rem;
+}
+
+
+/* config 1 */
+
+ #wrapper[data-roundness='1'] > .shape {
+    border-radius: 6rem;
+}
+#wrapper[data-configuration='1'] > .shape:nth-child(1) {
+   left: 0%;
+ top: 0%;
+ height: 50%;
+ width: 15%;
+}
+
+#wrapper[data-configuration='1'] > .shape:nth-child(2) {
+    left: 15%;
+    top: 0%;
+    width: 30%;
+    height: 50%;
+}
+
+#wrapper[data-configuration='1'] > .shape:nth-child(3) {
+    left: 45%;
+    top: 0%;
+    width: 55%;
+    height: 100%;
+}
+
+#wrapper[data-configuration='1'] > .shape:nth-child(4) {
+    left: 0%;
+    top: 50%;
+    width: 30%;
+    height: 50%;
+}
+
+#wrapper[data-configuration='1'] > .shape:nth-child(5) {
+     left: 75%;
+    top: 50%;
+    width: 25%;
+    height: 50%;
+}
+
+#wrapper[data-configuration='1'] > .shape:nth-child(6) {
+   left: 30%;
+    top: 50%;
+    height: 50%;
+    width: 15%;
+} 
+
+
+/* config 2 */
+#wrapper[data-roundness='2'] > .shape {
+    /* border-radius: ; */
+}
+#wrapper[data-configuration='2'] > .shape:nth-child(1) {
+    left: 0%;
+    width: 20%;
+    height: 40%;
+}
+
+#wrapper[data-configuration='2'] > .shape:nth-child(2) {
+    top: 20%;
+    left: 20%;
+    width: 20%;
+    height: 60%;
+}
+
+#wrapper[data-configuration='2'] > .shape:nth-child(3) {
+    left: 40%;
+    top: 40%;
+    width: 20%;
+    height: 60%;
+}
+
+#wrapper[data-configuration='2'] > .shape:nth-child(4) {
+    left: 60%;
+    top: 20%;
+   width: 20%;
+   height: 40%;
+}
+
+#wrapper[data-configuration='2'] > .shape:nth-child(5) {
+    left: 80%;
+    width: 20%;
+    height: 80%;
+}
+
+#wrapper[data-configuration='2'] > .shape:nth-child(6) {
+    left: 0%;
+   width: 20%;
+   top: 40%;
+   height: 20%;
+}
+
+/* config 3 */
+
+#wrapper[data-roundness='3'] > .shape {
+     border-radius: 0px; 
+}
+#wrapper[data-configuration='3'] > .shape:nth-child(1) {
+    left: 0%;
+    top: 0%;
+    height: 50%;
+    width: 15%;
+   }
+   #wrapper[data-configuration='3'] >    .shape:nth-child(2) {
+       left: 15%;
+       top: 0%;
+       width: 15%;
+       height: 70%;
+      
+   }
+   #wrapper[data-configuration='3'] >  .shape:nth-child(3) { 
+       left: 30%;
+       top: 20%;
+       width: 15%;
+       height: 80%;
+   }
+   #wrapper[data-configuration='3'] >   .shape:nth-child(4) {
+       left: 45%;
+       top: 20%;
+       width: 15%;
+       height: 40%;
+   }
+   #wrapper[data-configuration='3'] >   .shape:nth-child(5) {
+       left: 60%;
+       top: 0%;
+       width: 25%;
+       height: 80%;
+   }
+   #wrapper[data-configuration='3'] >  .shape:nth-child(6) {
+       left: 85%;
+       top: 30%;
+       height: 60%;
+       width: 15%;
+   }

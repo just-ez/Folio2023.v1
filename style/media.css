@@ -1,0 +1,121 @@
+@media screen and (max-width: 1230px) {
+   #scroll-down {
+    display: none;
+   }
+  }
+
+
+  @media screen and (max-width: 743px) {
+    #top {
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .header-details {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1em;
+    }
+    header a {
+        display: none;
+    }
+    .container-1, .container-2 {
+      flex-direction: column;
+      gap: 5em;
+    }
+    .container-2 {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .shape-1 {
+        width: 90%;
+    }
+    .header-txt {
+        margin-left: 35%;
+        font-size: 3.5vw;
+    }
+    .scroll-down {
+        width: 100%;
+    }
+    .hero-txt h1{
+        font-size: 12vw;
+        margin: 0;
+    }
+    .scroll-down p {
+        font-size: 1.5em;
+        width: 90%;
+        margin: auto;
+    }
+    #project-wrapper {
+        aspect-ratio: 1.618;
+        width: 100%;
+        height: 80vh;
+    }
+    /* config 1 */
+
+#project-wrapper[data-roundness='1']>.shape {
+    border-radius: 6em;
+}
+
+#project-wrapper[data-configuration='1']>.shape:nth-child(1) {
+    left: 0%;
+    /* top: 0%; */
+    height: 20%;
+    width: 100%;
+}
+
+#project-wrapper[data-configuration='1']>.shape:nth-child(2) {
+    left: 0%;
+    top: 20%;
+    width: 100%;
+    height: 20%;
+}
+
+#project-wrapper[data-configuration='1']>.shape:nth-child(3) {
+    left: 0%;
+    top: 40%;
+    width: 100%;
+    height: 20%;
+}
+
+#project-wrapper[data-configuration='1']>.shape:nth-child(4) {
+    left: 0%;
+    top: 60%;
+    width: 100%;
+    height: 20%;
+}
+
+#project-wrapper[data-configuration='1']>.shape:nth-child(5) {
+    left: 0%;
+    top: 80%;
+    width: 100%;
+    height: 20%;
+}
+
+#project-wrapper[data-configuration='1']>.shape:nth-child(6) {
+    left: 0%;
+    top: 100%;
+    height: 20%;
+    width: 100%;
+}
+
+.the-p-just-dey-sha {
+    width: 80%;
+}
+footer {
+    margin: 1em;
+}
+.contact-grid {
+    grid-template-columns: 1fr;
+}
+.link-1 {
+    border-top-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+.link-2 {
+    border-top-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+  }

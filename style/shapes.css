@@ -1,0 +1,113 @@
+.project-container {
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 5em;
+}
+
+#project-wrapper {
+    aspect-ratio: 1.618;
+    width: 80%;
+    height: 80vh;
+    position: relative;
+    margin: 0 auto;
+}
+
+ .shape {
+    background-color: #333;
+    color: #eee;
+    text-decoration: none;
+    font-size: 2em;
+    position: absolute;
+    transition: top, left, right, width, border-radius, transform;
+    transition-duration: 750ms;
+    transition-timing-function: ease-in-out;
+    border-radius: 1rem;
+    cursor: pointer;
+    padding: 1em;
+}
+
+
+.shape:nth-child(2) {
+background: salmon;
+}
+
+.shape:nth-child(3) {
+background: seagreen;
+}
+
+.shape:nth-child(4) {
+    background: rosybrown;
+}
+
+.shape:nth-child(5) {
+    background: teal;
+}
+
+.shape:nth-child(6) {
+    background: darkkhaki;
+}
+
+/* config 1 */
+
+#project-wrapper[data-roundness='1']>.shape {
+    border-radius: 6em;
+}
+
+#project-wrapper[data-configuration='1']>.shape:nth-child(1) {
+    left: 0%;
+    top: 0%;
+    height: 50%;
+    width: 15%;
+}
+
+#project-wrapper[data-configuration='1']>.shape:nth-child(2) {
+    left: 15%;
+    top: 0%;
+    width: 30%;
+    height: 50%;
+}
+
+#project-wrapper[data-configuration='1']>.shape:nth-child(3) {
+    left: 45%;
+    top: 0%;
+    width: 55%;
+    height: 100%;
+}
+
+#project-wrapper[data-configuration='1']>.shape:nth-child(4) {
+    left: 0%;
+    top: 50%;
+    width: 30%;
+    height: 50%;
+}
+
+#project-wrapper[data-configuration='1']>.shape:nth-child(5) {
+    left: 75%;
+    top: 50%;
+    width: 25%;
+    height: 50%;
+}
+
+#project-wrapper[data-configuration='1']>.shape:nth-child(6) {
+    left: 30%;
+    top: 50%;
+    height: 50%;
+    width: 15%;
+}
+
+
+/* config 2 */
+#project-wrapper[data-roundness='2']>.shape {
+    border-top-left-radius: 4em;
+}
+
+/* config 3 */
+#project-wrapper[data-roundness='3']>.shape {
+    border-top-right-radius: 4em;
+}
+
+/* config 4 */
+#project-wrapper[data-roundness='4']>.shape {
+    border-bottom-right-radius: 4em;
+}
