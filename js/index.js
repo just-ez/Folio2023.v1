@@ -29,6 +29,7 @@ let moseEvents =
 
 window.addEventListener('mousemove', e => moseEvents(e)) // listening on mouse move event
 
+
 const wrapper = document.getElementById('project-wrapper');
 
 let rand = (min,max) => {

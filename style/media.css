@@ -6,6 +6,9 @@
 
 
   @media screen and (max-width: 743px) {
+    header{
+         margin: 1em;
+        }
     #top {
         align-items: flex-start;
         justify-content: space-between;
@@ -135,4 +138,8 @@ footer h2 {
     border-bottom-left-radius: 1em;
 }
 
+/* preloader responsiveness */
+#preloader > div  {
+    font-size: small;
+}
   }
