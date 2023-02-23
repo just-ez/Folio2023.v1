@@ -116,13 +116,13 @@
     width: 80%;
 }
 footer {
-    margin: 1em;
     padding: 1em;
 }
 footer h2 {
     margin: 1em 0;
 }
 .contact-grid {
+    width: 100%;
     grid-template-columns: 1fr;
 }
 .link-1 {
