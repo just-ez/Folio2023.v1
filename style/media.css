@@ -6,12 +6,11 @@
 
 
   @media screen and (max-width: 743px) {
-    header{
-         margin: 1em;
-        }
+    
     #top {
         align-items: flex-start;
         justify-content: space-between;
+        
     }
     #top button {
         display: none;
@@ -142,4 +141,11 @@ footer h2 {
 #preloader > div  {
     font-size: small;
 }
+  }
+
+  @media screen and (max-width: 365px) { 
+   #top {
+    margin: 0;
+    padding: .2em;
+   }
   }
